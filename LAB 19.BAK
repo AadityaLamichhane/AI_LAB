@@ -1,0 +1,12 @@
+% By SriJan Karki
+
+% --- Interactive version ---
+greatest :-
+    write('Enter first number: '), read(A),
+    write('Enter second number: '), read(B),
+    ( A > B ->
+        write('The greatest number is '), write(A), nl
+    ;
+        write('The greatest number is '), write(B), nl
+    ).
+

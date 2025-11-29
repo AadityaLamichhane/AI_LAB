@@ -1,0 +1,26 @@
+% By SriJan Karki
+
+% --- Rectangle ---
+area_of_rectangle :-
+    write('Enter length: '), read(L),
+    write('Enter breadth: '), read(B),
+    A is L * B,
+    write('Area of the rectangle = '), write(A), nl.
+
+perimeter_of_rectangle :-
+    write('Enter length: '), read(L),
+    write('Enter breadth: '), read(B),
+    P is 2 * (L + B),
+    write('Perimeter of the rectangle = '), write(P), nl.
+
+% --- Circle ---
+area_of_circle :-
+    write('Enter radius: '), read(R),
+    A is 22/7 * R * R,
+    write('Area of the circle = '), write(A), nl.
+
+circumference_of_circle :-
+    write('Enter radius: '), read(R),
+    C is 2 * 22/7 * R,
+    write('Circumference of the circle = '), write(C), nl.
+

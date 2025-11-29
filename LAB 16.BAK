@@ -1,0 +1,9 @@
+toh(1,S,D,_):-
+write('Move top disk from '),
+write(S),write(' to '),write(D),nl.
+toh(N,X,Y,Z):-
+N>1,
+M is N-1,
+toh(M,X,Z,Y),
+toh(1,X,Y,_),
+toh(M,Z,Y,X).

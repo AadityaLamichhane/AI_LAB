@@ -1,0 +1,15 @@
+% By Aaditya Lamichhane
+
+gcd_calc :-
+    write('Enter first number: '), read(A),
+    write('Enter second number: '), read(B),
+    gcd(A, B, G),
+    write('GCD of '), write(A), write(' and '), write(B),
+    write(' is '), write(G), nl.
+
+gcd(A, 0, A) :- A > 0.
+gcd(A, B, G) :-
+    B > 0,
+    R is A mod B,
+    gcd(B, R, G).
+

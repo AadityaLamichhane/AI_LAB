@@ -1,0 +1,16 @@
+% By SriJan Karki
+
+% Base case: empty list reverses to empty list
+reverse_list([], []).
+
+% Recursive case
+reverse_list([H|T], Rev) :-
+    reverse_list(T, RevT),
+    append(RevT, [H], Rev).
+
+% --- Interactive version ---
+reverse_input :-
+    write('Enter a list or string (as [a,b,c] or "abc"): '), read(L),
+    reverse_list(L, R),
+    write('Reversed: '), write(R), nl.
+

@@ -1,0 +1,15 @@
+boy('Sanjay').
+girl('Geeta').
+male('Asha Kaji').
+male('Sanjay').
+female('Chaitya Maya').
+female('Anita').
+father('Asha Kaji','Anita').
+father('Asha Kaji','Sanjay').
+father('Purna','Asha Kaji').
+mother('Chaitya Maya','Anita').
+mother('Chaitya Maya','Sanjay').
+husband('Asha Kaji','Chitya Maya').
+grandfather('Purna','Sanjay').
+grandfather('Purna','Anita').
+granddaughter('Anita','Purna').
